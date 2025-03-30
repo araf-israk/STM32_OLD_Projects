@@ -1,0 +1,17 @@
+/*
+ * bsp_lcd.h
+ *
+ *  Created on: Mar 1, 2025
+ *      Author: arafi
+ */
+
+#ifndef BSP_LCD_H_
+#define BSP_LCD_H_
+
+#include "stm32f411xe.h"
+#include "bsp_lcd.h"
+
+
+void BSP_LCD_Init(void);
+
+#endif /* BSP_LCD_H_ */

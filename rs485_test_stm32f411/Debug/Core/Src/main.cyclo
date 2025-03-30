@@ -1,0 +1,7 @@
+../Core/Src/main.c:58:6:modbus_tx_data	1
+../Core/Src/main.c:111:5:main	1
+../Core/Src/main.c:158:6:SystemClock_Config	3
+../Core/Src/main.c:204:13:MX_USART1_UART_Init	2
+../Core/Src/main.c:237:13:MX_GPIO_Init	1
+../Core/Src/main.c:262:6:HAL_UARTEx_RxEventCallback	1
+../Core/Src/main.c:272:6:Error_Handler	1

@@ -1,0 +1,5 @@
+../Core/Src/board.c:12:6:board_button_init	32	static
+../Core/Src/board.c:26:9:board_button_getstate	8	static
+../Core/Src/board.c:31:6:board_led_init	32	static
+../Core/Src/board.c:49:6:board_led_toggle	8	static
+../Core/Src/board.c:54:6:board_led_set	16	static

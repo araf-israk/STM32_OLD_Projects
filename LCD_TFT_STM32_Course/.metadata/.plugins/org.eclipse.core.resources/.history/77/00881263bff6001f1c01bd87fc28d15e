@@ -1,0 +1,98 @@
+/*
+ * bsp_lcd.c
+ *
+ *  Created on: Mar 1, 2025
+ *      Author: arafi
+ */
+
+#include "bsp_lcd.h"
+
+void LCD_Pin_Init(void);
+void LCD_SPI_Init(void);
+void LCD_Reset(void);
+void LCD_Config(void);
+
+#ifdef STM32F429
+
+#define LCD_SCL_PIN
+#define LCD_SCL_PORT
+
+#define LCD_SDA_PIN
+#define LCD_SDA_PORT
+
+#define LCD_RESX_PIN
+#define LCD_CSX_PIN
+#define LCD_WRX_DCX_PIN
+
+
+#endif
+
+#ifdef STM32F411CEUx
+
+#define SPI		SPI2
+
+#define LCD_SCL_PIN		GPIO_PIN_13
+#define LCD_SCL_PORT	GPIOB
+
+#define LCD_SDI_PIN		GPIO_PIN_15
+#define LCD_SDI_PORT	GPIOB
+
+#define LCD_SDO_PIN		GPIO_PIN_2
+#define LCD_SDO_PORT	GPIOC
+
+#define LCD_RESX_PIN	GPIO_PIN_10
+#define LCD_RESX_PORT	GPIOD
+
+#define LCD_CSX_PIN		GPIO_PIN_11
+#define LCD_CSX_PORT	GPIOD
+
+#define LCD_DCX_PIN		GPIO_PIN_9
+#define LCD_DCX_PORT	GPIOD
+
+
+#endif
+
+void BSP_LCD_Init(void){
+	LCD_Pin_Init();
+	LCD_SPI_Init();
+	LCD_Reset();
+	LCD_Config();
+}
+
+
+void LCD_Pin_Init(void){
+	RCC_TypeDef *pRCC = RCC;
+	GPIO_TypeDef *pGPIOB = GPIOB;
+	GPIO_TypeDef *pGPIOC = GPIOC;
+	GPIO_TypeDef *pGPIOD = GPIOD;
+
+	/* Enable the clock for GPIO B, C, D */
+	REG_SET_BIT(pRCC->AHB1ENR, RCC_AHB1ENR_GPIOBEN_Pos);
+	REG_SET_BIT(pRCC->AHB1ENR, RCC_AHB1ENR_GPIOCEN_Pos);
+	REG_SET_BIT(pRCC->AHB1ENR, RCC_AHB1ENR_GPIODEN_Pos);
+
+	/* Set Pin Mode for PB13*/
+	REG_SET_VAL(pGPIOB->MODER, 0x1U, 0x3U, GPIO_MODER_MODE13_Pos);
+	REG_CLR_BIT(pGPIOB->OTYPER, GPIO_OTYPER_OT13_Pos);
+	REG_SET_VAL(pGPIOB->OSPEEDR, 0x2U, 0x3U, GPIO_OSPEEDR_OSPEED13_Pos);
+
+	/* Set Pin Mode for PB15*/
+	REG_SET_VAL(pGPIOB->MODER, 0x1U, 0x3U, GPIO_MODER_MODE15_Pos);
+	REG_CLR_BIT(pGPIOB->OTYPER, GPIO_OTYPER_OT15_Pos);
+	REG_SET_VAL(pGPIOB->OSPEEDR, 0x2U, 0x3U, GPIO_OSPEEDR_OSPEED15_Pos);
+
+
+
+}
+
+void LCD_SPI_Init(void){
+
+}
+
+void LCD_Reset(void){
+
+}
+
+void LCD_Config(void){
+
+}

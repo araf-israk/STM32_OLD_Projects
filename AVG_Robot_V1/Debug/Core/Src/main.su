@@ -1,0 +1,16 @@
+../Core/Src/main.c:99:6:sensorCalibration	80	static
+../Core/Src/main.c:138:5:map	24	static
+../Core/Src/main.c:143:6:readCalibrated	40	static
+../Core/Src/main.c:178:5:read_ir_line	48	static
+../Core/Src/main.c:229:6:PID_control	48	static
+../Core/Src/main.c:257:6:motor_forward	16	static
+../Core/Src/main.c:287:6:motor_sharp_left	16	static
+../Core/Src/main.c:303:6:motor_sharp_right	16	static
+../Core/Src/main.c:319:6:calibrationSequence	24	static
+../Core/Src/main.c:355:5:main	16	static
+../Core/Src/main.c:412:6:SystemClock_Config	88	static
+../Core/Src/main.c:458:13:MX_ADC1_Init	24	static
+../Core/Src/main.c:591:13:MX_TIM2_Init	64	static
+../Core/Src/main.c:652:13:MX_DMA_Init	16	static
+../Core/Src/main.c:670:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:724:6:Error_Handler	4	static,ignoring_inline_asm

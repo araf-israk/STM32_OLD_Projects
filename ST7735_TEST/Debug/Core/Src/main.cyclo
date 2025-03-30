@@ -1,0 +1,6 @@
+../Core/Src/main.c:62:6:demoTFT	6
+../Core/Src/main.c:160:5:main	1
+../Core/Src/main.c:206:6:SystemClock_Config	3
+../Core/Src/main.c:252:13:MX_SPI1_Init	2
+../Core/Src/main.c:290:13:MX_GPIO_Init	1
+../Core/Src/main.c:323:6:Error_Handler	1

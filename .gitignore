@@ -1,0 +1,10 @@
+# ignore ALL .log files
+*.log
+
+# ignore ALL files in ANY directory named temp
+temp/
+
+haiko-wheel/
+Embedded Driver Develpoment Course 1 codes/
+Embedded Systems BM GU Course/
+haiko_remote/

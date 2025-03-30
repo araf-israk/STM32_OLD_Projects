@@ -1,0 +1,6 @@
+../Core/Src/spi.c:14:6:SPI1_Pins_Init	1
+../Core/Src/spi.c:24:6:SPI1_Init	1
+../Core/Src/spi.c:58:6:spi1_transmit	5
+../Core/Src/spi.c:82:6:spi1_receive	3
+../Core/Src/spi.c:100:6:cs_enable	1
+../Core/Src/spi.c:107:6:cs_disable	1

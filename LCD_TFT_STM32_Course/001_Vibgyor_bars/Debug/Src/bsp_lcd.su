@@ -1,0 +1,13 @@
+../Src/bsp_lcd.c:106:6:BSP_LCD_Init	8	static
+../Src/bsp_lcd.c:114:13:delay_50ms	16	static
+../Src/bsp_lcd.c:118:6:LCD_Pin_Init	24	static
+../Src/bsp_lcd.c:175:6:lcd_spi_enable	16	static
+../Src/bsp_lcd.c:180:6:lcd_spi_disable	16	static
+../Src/bsp_lcd.c:186:6:LCD_SPI_Init	16	static
+../Src/bsp_lcd.c:206:6:LCD_Reset	16	static
+../Src/bsp_lcd.c:213:6:LCD_Config	24	static
+../Src/bsp_lcd.c:357:6:bsp_lcd_set_display_area	32	static
+../Src/bsp_lcd.c:366:6:lcd_set_display_area	24	static
+../Src/bsp_lcd.c:386:6:bsp_lcd_write	24	static
+../Src/bsp_lcd.c:413:6:lcd_write_cmd	24	static
+../Src/bsp_lcd.c:426:6:lcd_write_data	24	static
